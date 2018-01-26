@@ -5,7 +5,9 @@
   "license": "MIT",
   "scripts": {
     "start1": "babel-node public/oldsrc",
-    "start": "babel-node src/server",
+    "start2": "babel-node src/server",
+    "start": "yarn dev:start",
+    "dev:start": "nodemon --ignore lib --exec babel-node src/server",
     "test": "eslint src && flow && jest --coverage",
     "precommit": "yarn test",
     "prepush": "yarn test"
@@ -29,7 +31,8 @@
     "eslint-plugin-react": "7.4.0",
     "flow-bin": "^0.64.0",
     "husky": "^0.14.3",
-    "jest": "^22.1.4"
+    "jest": "^22.1.4",
+    "nodemon": "^1.14.11"
   },
   "dependencies": {
     "compression": "^1.7.1",
