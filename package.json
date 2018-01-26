@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "babel-node src",
+    "start1": "babel-node public/oldsrc",
+    "start": "babel-node src/server",
     "test": "eslint src && flow && jest --coverage",
     "precommit": "yarn test",
     "prepush": "yarn test"
@@ -29,5 +30,9 @@
     "flow-bin": "^0.64.0",
     "husky": "^0.14.3",
     "jest": "^22.1.4"
+  },
+  "dependencies": {
+    "compression": "^1.7.1",
+    "express": "^4.16.2"
   }
 }
