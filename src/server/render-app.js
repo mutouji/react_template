@@ -11,7 +11,7 @@ const renderApp = (title: string) =>
     <link rel="stylesheet" href="${STATIC_PATH}/css/style.css">
   </head>
   <body>
-    <div>haha</div>
+    <div>ha</div>
     <div class="${APP_CONTAINER_CLASS}"></div>
     <script src="${isProd ? STATIC_PATH : `http://localhost:${WDS_PORT}/dist`}/js/bundle.js"></script>
   </body>

@@ -3,6 +3,10 @@
   // env == latest == es2015+es2016+es2017
   "presets": [
     "env",
-    "flow"
+    "flow",
+    "react"
+  ],
+  "plugins": [
+    "flow-react-proptypes"
   ]
 }
