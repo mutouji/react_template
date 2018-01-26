@@ -2,5 +2,6 @@
 /*.log
 .idea
 node_modules/
-dist/
-coverage/
+/dist/
+/coverage/
+/lib/
