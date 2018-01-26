@@ -13,6 +13,8 @@
     "compat/compat": 2
   },
   "env": {
+    // allow using global browser object---document,window
+    "browser": true,
     "jest": true
   }
 }
