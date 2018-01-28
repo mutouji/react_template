@@ -16,5 +16,8 @@
     // allow using global browser object---document,window
     "browser": true,
     "jest": true
+  },
+  "settings": {
+    "polyfills": ["fetch"]
   }
 }
