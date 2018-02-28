@@ -10,7 +10,17 @@ import {
   IO_SERVER_HELLO,
 } from '../shared/config'
 
-const socket = socketIOClient(window.location.host)
+// const socket = socketIOClient(window.location.host)
+const socket = socketIOClient('http://localhost:8000')
+// const socket = socketIOClient(`http://localhost:8000`, {
+//   reconnectionDelay: 1000,
+//   reconnection: true,
+//   reconnectionAttempts: 10,
+//   transports: ['websocket'],
+//   agent: false, // [2] Please don't set this to true
+//   upgrade: false,
+//   rejectUnauthorized: false,
+// })
 
 /* eslint-disable no-console */
 // eslint-disable-next-line no-unused-vars
